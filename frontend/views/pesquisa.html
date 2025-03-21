@@ -1,11 +1,83 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/pesquisa.css">
+    <title>Pesquisas</title>
 </head>
 <body>
-  
+
+  <header>
+    <span class="menu-icon" onclick="toggleMenu()">&#9776;</span>
+    <img src="../assets/image/Logo.png" alt="Logo" class="header-logo">
+    <h1>Guia para Economia de Água em Residências</h1>
+</header>
+
+<main>
+
+<nav id="sidebar" class="sidebar">
+    <span class="close-btn" onclick="toggleMenu()">&times;</span>
+    <ul>
+        <li><a href="#importancia">Importância da Sustentabilidade</a></li>
+        <li><a href="#estatisticas">Estatísticas e Impactos</a></li>
+        <li><a href="#beneficios">Benefícios das Práticas Sustentáveis</a></li>
+        <li><a href="#tecnologia">Tecnologias Sustentáveis</a></li>
+        <li><a href="#sobre">Sobre Nós</a></li>
+    </ul>
+</nav>
+
+<section class="sustentabilidade" id="importancia">
+  <h2>Por que Adotar Práticas Sustentáveis?</h2>
+  <p>O uso consciente da água é essencial para a preservação dos recursos hídricos e para garantir o abastecimento das futuras gerações. O desperdício de água tem impactos ambientais, sociais e econômicos, tornando urgente a adoção de práticas mais eficientes.</p>
+  <p>Para mais informações, leia este <a href="https://www.teachy.com.br/resumos/ensino-fundamental/6ano/geografia/reaproveitamento-da-agua-praticas-sustentaveis-para-a-conservacao-dos-recursos-hidricos-Expositiva" target="_blank">artigo sobre reaproveitamento da água</a>.</p>
+</section>
+
+<section class="estatisticas" id="estatisticas">
+  <h2>Estatísticas sobre Consumo de Água</h2>
+  <p>• Um banho de 15 minutos pode consumir até 135 litros de água se não houver controle adequado.</p>
+  <p>• O consumo médio de água no Brasil é de 148,2 litros por habitante ao dia, enquanto a ONU recomenda 110 litros/dia para atender às necessidades básicas.</p>
+  <p>• A irrigação agrícola representa aproximadamente 70% do consumo mundial de água doce.</p>
+  <p>Para dados mais detalhados, consulte o <a href="https://tratabrasil.org.br/principais-estatisticas/agua/" target="_blank">relatório do Trata Brasil</a>.</p>
+</section>
+
+<section class="beneficios" id="beneficios">
+  <h2>Benefícios das Práticas Sustentáveis</h2>
+  <ul>
+      <li>Redução no consumo de água e na conta de abastecimento.</li>
+      <li>Preservação de mananciais e aquíferos.</li>
+      <li>Diminuição da poluição hídrica ao evitar desperdícios.</li>
+  </ul>
+  <p>Descubra mais sobre os benefícios das práticas sustentáveis no <a href="https://aguasustentavel.org.br/conteudo/blog/258-o-que-e-e-como-fazer-a-gestao-sustentavel-dos-recursos-hidricos" target="_blank">site do Instituto Água Sustentável</a>.</p>
+</section>
+
+<section class="tecnologia" id="tecnologia">
+    <h2>Tecnologias para Economia de Água</h2>
+    <div class="pesquisa-container">
+        <div class="pesquisa-item">
+            <img src="../assets/image/sensor.jpeg" alt="Sensor de umidade">
+            <h3>Sensores de Umidade</h3>
+            <p>Dispositivos que controlam automaticamente a irrigação com base na umidade do solo.</p>
+            <a href="https://maua.br/files/122020/desenvolvimento-sensor-umidade-para-agricultura-precisao-151455.pdf" target="_blank">Saiba mais</a>
+        </div>
+        <div class="pesquisa-item">
+            <img src="../assets/image/reuso.jpg" alt="Reuso de água">
+            <h3>Reuso de Água</h3>
+            <p>Sistemas que tratam e reutilizam a água de pias e chuveiros para fins não potáveis.</p>
+            <a href="https://repositorio.uft.edu.br/handle/11612/7176" target="_blank">Saiba mais</a>
+        </div>
+        <div class="pesquisa-item">
+            <img src="../assets/image/inteligente.png" alt="Irrigação Inteligente">
+            <h3>Irrigação Inteligente</h3>
+            <p>Uso de algoritmos para otimizar o consumo de água na agricultura e jardinagem.</p>
+            <a href="https://lcv.fee.unicamp.br/images/BTSym-22-Brasil/papers/BTSym2022_084.pdf" target="_blank">Saiba mais</a>
+        </div>
+    </div>
+</section>
+
+</main>
+
+<script src="../scripts/pesquisa.js"></script>
+
 </body>
 </html>
