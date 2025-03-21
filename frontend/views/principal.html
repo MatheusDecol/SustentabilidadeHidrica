@@ -1,33 +1,131 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tela Principal</title>
-  <link rel="stylesheet" href="../styles/principal.css">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/principal.css">
+    <title>Sustentabilidade Hídrica</title>
 </head>
 <body>
-  
-  <div class="container">
-    <div class="card">
 
-      <h1>Minhas Equipes</h1>
-      <h2 class="justify-center">Equipes</h2>
-      <ul id="teams"></ul>
-      <div class="justify-evenly">
+    <header>
 
-        <button id="add-team-btn">Adicionar Nova Equipe</button>
-        <button id="logout-btn" onclick="setupLogoutButton()">Logout</button>
-      </div>
+        <span class="menu-icon" onclick="toggleMenu()">&#9776;</span>
+        <img src="../assets/image/Logo.png" alt="Logo" class="header-logo">
+        <h1>Guia para Economia de Água em Residências</h1>
+        
+    </header>
+    <main>
     
-    </div>
-  </div>
+    <nav id="sidebar" class="sidebar">
+        <span class="close-btn" onclick="toggleMenu()">&times;</span>
+        <ul>
 
-  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-  <script src="/frontend/scripts/logout.js"></script>
-  <script src="/frontend/scripts/principal.js"></script>
+            <li><a href="#dicas">Dicas para Economizar</a></li>
+            <li><a href="#pesquisa">Pesquisa e Tecnologia</a></li>
+            <li><a href="#calculadora">Calculadora de Consumo</a></li>
+            <li><a href="#resultados">Resultados Esperados</a></li>
+            <li><a href="#sobre">Sobre Nós</a></li>
+            
+        </ul>
+    </nav>
 
+      <div class="cards-section">
+    
+        <h2 class=" tittle">Dicas para economizar água</h2>
+        
+      </div>
+
+      <div class="cards-container">
+
+        <div class="dicas-card">
+
+            <div class="dicas-image" onclick="toggleModal('modal1')">
+              <img src="../assets/image/chuva.jpg" alt="chuva-image">
+            </div>
+
+            <p class="dicas-name" onclick="toggleModal('modal1')">Reutilize a água da chuva</p>
+    
+            <div id="modal1" class="modal" style="display: none;">
+                <div class="modal-content">
+                    <span class="close" onclick="toggleModal('modal1')">&times;</span>
+
+                    <h2>Reutilize a água da chuva</h2>
+
+                    <img src="../assets/image/chuva.jpg" alt="chuva-image">
+
+                    <p>A captação de água da chuva é uma solução sustentável para reduzir o consumo de água potável. Essa prática permite armazenar a água das chuvas para usos não potáveis, como irrigação de plantas, limpeza de calçadas e até para descarga de vasos sanitários. Com a instalação de calhas e um sistema de filtragem simples, é possível aproveitar esse recurso natural e diminuir a conta de água, além de contribuir para a preservação dos mananciais hídricos.</p>
+
+                </div>
+            </div>
+        </div>
+        
+<!--//////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+        <div class="dicas-card">
+
+            <div class="dicas-image" onclick="toggleModal('modal2')">
+
+              <img src="../assets/image/torneira.png" alt="torneira-image">
+
+            </div>
+
+            <p class="dicas-name" onclick="toggleModal('modal2')">Feche a torneira enquanto escova os dentes</p>
+    
+          
+            <div id="modal2" class="modal" style="display: none;">
+                <div class="modal-content">
+                    <span class="close" onclick="toggleModal('modal2')">&times;</span>
+
+                    <h2>Feche a torneira enquanto escova os dentes</h2>
+
+                    <img src="../assets/image/torneira.png" alt="torneira-image">
+
+                    <p>Parece um gesto simples, mas deixar a torneira aberta enquanto escovamos os dentes pode desperdiçar até 12 litros de água por minuto. Se cada pessoa adotasse o hábito de fechar a torneira, poderíamos economizar milhares de litros por ano. Essa ação reduz significativamente o consumo de água e ajuda a evitar o desperdício desnecessário, promovendo um uso mais consciente desse recurso essencial.</p>
+
+                </div>
+            </div>
+        </div>
+          
+<!--//////////////////////////////////////////////////////////////////////////////////////////////////// -->
+  
+        <div class="dicas-card">
+
+            <div class="dicas-image" onclick="toggleModal('modal3')">
+
+              <img src="../assets/image/redutor.png" alt="redutor-image">
+
+            </div>
+
+            <p class="dicas-name" onclick="toggleModal('modal3')">Use redutores de vazão</p>
+    
+
+            <div id="modal3" class="modal" style="display: none;">
+                <div class="modal-content">
+                    <span class="close" onclick="toggleModal('modal3')">&times;</span>
+
+                    <h2>Use redutores de vazão</h2>
+
+                    <img src="../assets/image/redutor.png" alt="redutor-image">
+
+                    <p>Os redutores de vazão são dispositivos simples e baratos que podem ser instalados em torneiras e chuveiros para diminuir a quantidade de água que sai do equipamento sem comprometer a eficiência do uso. Com essa tecnologia, é possível economizar até 50% de água no dia a dia, reduzindo os custos na conta de água e minimizando o impacto ambiental. É uma solução prática para quem deseja adotar hábitos mais sustentáveis sem abrir mão do conforto.</p>
+                    
+                </div>
+            </div>
+        </div>
+        </div>
+
+<!--//////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+        <div class="dicas-button">
+            <button class="btn-dicas" onclick="window.location.href='dicas.html'">Leia mais dicas</button>
+        </div>
+    
+
+
+    </main>
+
+    <script src="../scripts/principal.js"></script>
+    
 </body>
 </html>

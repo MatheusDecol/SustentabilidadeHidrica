@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../styles/dicas.css">
+  <title>Noticias</title>
+</head>
+<body>
+  
+    <header>
+
+        <span class="menu-icon" onclick="toggleMenu()">&#9776;</span>
+        <img src="../assets/image/Logo.png" alt="Logo" class="header-logo">
+        <h1>Guia para Economia de Água em Residências</h1>
+    
+    </header>
+
+<main>
+
+    <nav id="sidebar" class="sidebar">
+        <span class="close-btn" onclick="toggleMenu()">&times;</span>
+        
+        <ul>
+    
+            <li><a href="#dicas">Dicas para Economizar</a></li>
+            <li><a href="#pesquisa">Pesquisa e Tecnologia</a></li>
+            <li><a href="#calculadora">Calculadora de Consumo</a></li>
+            <li><a href="#resultados">Resultados Esperados</a></li>
+            <li><a href="#sobre">Sobre Nós</a></li>
+            
+        </ul>
+
+    </nav>
+
+  <div class="cards-section">
+    
+    <h2 class=" tittle">Dicas para economizar água</h2>
+    
+  </div>
+
+  <div class="cards-container">
+
+    <div class="dicas-card">
+
+        <div class="dicas-image" onclick="toggleModal('modal1')">
+          <img src="../assets/image/chuva.jpg" alt="chuva-image">
+        </div>
+
+        <p class="dicas-name" onclick="toggleModal('modal1')">Reutilize a água da chuva</p>
+
+        <div id="modal1" class="modal" style="display: none;">
+            <div class="modal-content">
+                <span class="close" onclick="toggleModal('modal1')">&times;</span>
+
+                <h2>Reutilize a água da chuva</h2>
+
+                <img src="../assets/image/chuva.jpg" alt="chuva-image">
+
+                <p>A captação de água da chuva é uma solução sustentável para reduzir o consumo de água potável. Essa prática permite armazenar a água das chuvas para usos não potáveis, como irrigação de plantas, limpeza de calçadas e até para descarga de vasos sanitários. Com a instalação de calhas e um sistema de filtragem simples, é possível aproveitar esse recurso natural e diminuir a conta de água, além de contribuir para a preservação dos mananciais hídricos.</p>
+
+            </div>
+        </div>
+    </div>
+    
+<!--//////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+    <div class="dicas-card">
+
+        <div class="dicas-image" onclick="toggleModal('modal2')">
+
+          <img src="../assets/image/torneira.png" alt="torneira-image">
+
+        </div>
+
+        <p class="dicas-name" onclick="toggleModal('modal2')">Feche a torneira enquanto escova os dentes</p>
+
+      
+        <div id="modal2" class="modal" style="display: none;">
+            <div class="modal-content">
+                <span class="close" onclick="toggleModal('modal2')">&times;</span>
+
+                <h2>Feche a torneira enquanto escova os dentes</h2>
+
+                <img src="../assets/image/torneira.png" alt="torneira-image">
+
+                <p>Parece um gesto simples, mas deixar a torneira aberta enquanto escovamos os dentes pode desperdiçar até 12 litros de água por minuto. Se cada pessoa adotasse o hábito de fechar a torneira, poderíamos economizar milhares de litros por ano. Essa ação reduz significativamente o consumo de água e ajuda a evitar o desperdício desnecessário, promovendo um uso mais consciente desse recurso essencial.</p>
+
+            </div>
+        </div>
+    </div>
+      
+<!--//////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+    <div class="dicas-card">
+
+        <div class="dicas-image" onclick="toggleModal('modal3')">
+
+          <img src="../assets/image/redutor.png" alt="redutor-image">
+
+        </div>
+
+        <p class="dicas-name" onclick="toggleModal('modal3')">Use redutores de vazão</p>
+
+
+        <div id="modal3" class="modal" style="display: none;">
+            <div class="modal-content">
+                <span class="close" onclick="toggleModal('modal3')">&times;</span>
+
+                <h2>Use redutores de vazão</h2>
+
+                <img src="../assets/image/redutor.png" alt="redutor-image">
+
+                <p>Os redutores de vazão são dispositivos simples e baratos que podem ser instalados em torneiras e chuveiros para diminuir a quantidade de água que sai do equipamento sem comprometer a eficiência do uso. Com essa tecnologia, é possível economizar até 50% de água no dia a dia, reduzindo os custos na conta de água e minimizando o impacto ambiental. É uma solução prática para quem deseja adotar hábitos mais sustentáveis sem abrir mão do conforto.</p>
+                
+            </div>
+        </div>
+    </div>
+
+<!--//////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+    <div class="dicas-card">
+
+        <div class="dicas-image" onclick="toggleModal('modal4')">
+
+          <img src="../assets/image/irrigacao.jpg" alt="irrigacao-image">
+
+        </div>
+
+        <p class="dicas-name" onclick="toggleModal('modal4')">Irrigação inteligente para jardins</p>
+
+
+        <div id="modal4" class="modal" style="display: none;">
+            <div class="modal-content">
+                <span class="close" onclick="toggleModal('modal4')">&times;</span>
+
+                <h2>Irrigação inteligente para jardins</h2>
+
+                <img src="../assets/image/irrigacao.jpg" alt="irrigacao-image">
+
+                <p>Regar as plantas nos horários mais frescos do dia, como no início da manhã ou no final da tarde, reduz a evaporação da água e melhora a absorção pelas raízes. Além disso, optar por sistemas de irrigação por gotejamento pode economizar até 50% de água em comparação com métodos tradicionais, garantindo um jardim bonito sem desperdício.</p>
+
+            </div>
+        </div>
+    </div>
+
+<!--//////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+    <div class="dicas-card">
+
+        <div class="dicas-image" onclick="toggleModal('modal5')">
+
+          <img src="../assets/image/vazamento.jpg" alt="irrigacao-image">
+
+        </div>
+
+        <p class="dicas-name" onclick="toggleModal('modal5')">Evitando vazamentos</p>
+
+
+        <div id="modal5" class="modal" style="display: none;">
+            <div class="modal-content">
+                <span class="close" onclick="toggleModal('modal5')">&times;</span>
+
+                <h2>Evitando vazamentos</h2>
+
+                <img src="../assets/image/vazamento.jpg" alt="irrigacao-image">
+
+                <p>Pequenos vazamentos podem desperdiçar centenas de litros de água por mês sem que você perceba. Verifique torneiras, válvulas de descarga e canos regularmente para identificar qualquer vazamento. Um teste simples é fechar todas as torneiras e verificar se o hidrômetro continua girando, se sim, há um vazamento oculto que precisa ser reparado.</p>
+
+            </div>
+        </div>
+    </div>
+
+
+<!--//////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+    <div class="dicas-card">
+
+        <div class="dicas-image" onclick="toggleModal('modal6')">
+
+          <img src="../assets/image/descarga.jpg" alt="irrigacao-image">
+
+        </div>
+
+        <p class="dicas-name" onclick="toggleModal('modal6')">Sistemas Eficientes de Descarga</p>
+
+
+        <div id="modal6" class="modal" style="display: none;">
+            <div class="modal-content">
+                <span class="close" onclick="toggleModal('modal6')">&times;</span>
+
+                <h2>Sistemas Eficientes de Descarga </h2>
+
+                <img src="../assets/image/descarga.jpg" alt="irrigacao-image">
+
+                <p>A instalação de sistemas de descarga com válvulas de dupla função é uma maneira simples e eficaz de reduzir o consumo de água em casa, sem comprometer a higiene e a funcionalidade. Esses sistemas permitem que os usuários escolham entre dois volumes de água para a descarga – uma opção de menor volume para líquidos e outra para sólidos. Com isso, é possível garantir que a quantidade de água utilizada seja sempre a mínima necessária, evitando o desperdício. Além disso, essa tecnologia também contribui para a economia nas contas de água e ajuda a preservar os recursos hídricos de maneira sustentável.</p>
+
+            </div>
+        </div>
+    </div>
+
+
+<!--//////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+    <div class="dicas-card">
+
+        <div class="dicas-image" onclick="toggleModal('modal7')">
+
+          <img src="../assets/image/chuveiro.jpg" alt="irrigacao-image">
+
+        </div>
+
+        <p class="dicas-name" onclick="toggleModal('modal7')">Chuveiros de Baixo Fluxo</p>
+
+
+        <div id="modal7" class="modal" style="display: none;">
+            <div class="modal-content">
+                <span class="close" onclick="toggleModal('modal7')">&times;</span>
+
+                <h2>Chuveiros de Baixo Fluxo</h2>
+
+                <img src="../assets/image/chuveiro.jpg" alt="irrigacao-image">
+
+                <p>Os chuveiros de baixo fluxo são uma alternativa inteligente e eficiente para reduzir o consumo de água durante o banho, mantendo o conforto e a pressão adequados. Esses dispositivos utilizam tecnologias como aeradores ou compressão para limitar a quantidade de água que passa pelo chuveiro, sem afetar a experiência do usuário. Ao instalar um chuveiro de baixo fluxo, é possível reduzir significativamente o consumo diário de água, sem perder a qualidade do banho. Além de contribuir para a preservação ambiental, essa solução gera economia nas contas de água, tornando-se uma escolha vantajosa para residências preocupadas com a sustentabilidade.</p>
+
+            </div>
+        </div>
+    </div>
+
+
+<!--//////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+    <div class="dicas-card">
+
+        <div class="dicas-image" onclick="toggleModal('modal8')">
+
+          <img src="../assets/image/lavaroupa.jpeg" alt="irrigacao-image">
+
+        </div>
+
+        <p class="dicas-name" onclick="toggleModal('modal8')">Eletrodomésticos Eficientes</p>
+
+
+        <div id="modal8" class="modal" style="display: none;">
+            <div class="modal-content">
+                <span class="close" onclick="toggleModal('modal8')">&times;</span>
+
+                <h2>Eletrodomésticos Eficientes</h2>
+
+                <img src="../assets/image/lavaroupa.jpeg" alt="irrigacao-image">
+
+                <p>Os eletrodomésticos eficientes são uma excelente maneira de otimizar o uso de água em casa. Máquinas de lavar roupas e lava-louças modernas, por exemplo, oferecem programas com baixo consumo de água, ajustando a quantidade de água usada de acordo com a carga e a sujeira. Optar por esses aparelhos não só economiza água, mas também energia, trazendo benefícios para o meio ambiente e para o bolso. Além disso, com tecnologias como a lavagem a seco em algumas máquinas, a redução no consumo de água é ainda mais expressiva.</p>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+    
+</main>
+
+<script src="../scripts/dicas.js"></script>
+
+</body>
+</html>

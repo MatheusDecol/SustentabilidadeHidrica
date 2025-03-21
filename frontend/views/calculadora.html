@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../styles/calculadora.css">
+  <title>Calculadora</title>
+</head>
+<body>
+  
+  <header>
+
+    <span class="menu-icon" onclick="toggleMenu()">&#9776;</span>
+    <img src="../assets/image/Logo.png" alt="Logo" class="header-logo">
+    <h1>Guia para Economia de Água em Residências</h1>
+
+  </header>
+
+<main>
+
+  <nav id="sidebar" class="sidebar">
+    <span class="close-btn" onclick="toggleMenu()">&times;</span>
+
+    <ul>
+
+        <li><a href="#dicas">Dicas para Economizar</a></li>
+        <li><a href="#pesquisa">Pesquisa e Tecnologia</a></li>
+        <li><a href="#calculadora">Calculadora de Consumo</a></li>
+        <li><a href="#resultados">Resultados Esperados</a></li>
+        <li><a href="#sobre">Sobre Nós</a></li>
+        
+    </ul>
+    
+  </nav>
+
+  <div class="cards-section">
+    
+    <h2 class=" tittle">Calcule seu consumo de Água</h2>
+    
+  </div>
+  
+  <section class="cards-calculator" id="calculadora">
+    
+    <div>
+      
+      
+      <label for="consumo">Litros usados por dia:</label>
+      
+      <input type="number" id="consumo" placeholder="Digite aqui">
+      
+      <button onclick="calcularEconomia()">Calcular</button>
+      <button onclick="limparCampos()">Limpar</button>
+      
+      <p id="resultado"></p>
+      
+    </div>          
+    
+  </section>
+</main>
+
+  <script src="../scripts/calculadora.js"></script>
+
+</body>
+</html>

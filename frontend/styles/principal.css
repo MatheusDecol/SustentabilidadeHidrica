@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: "PT Sans", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 html{
@@ -9,106 +9,225 @@ html{
 }
 
 body {
-  background-image: url("../assets/image/background2.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed
-}
-
-h1{
-  color: #082a44;
-  font-size: 3rem;
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #e0f7fa;
   text-align: center;
-  margin-bottom: 2rem;
 }
 
-h2{
-  color: black;
-  font-size: 1.8rem;
-  text-align: center;
-  margin-bottom: 1rem;
+header {
+  background-color: #0a4ab9;
+  color: white;
+  padding: 2.5rem;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
 }
 
-a{
-  color: #1807b6;
-  font-size: 1.6rem;
-  font-weight: 60rem;
-  text-decoration: none;
-  transition: all .3s ease-out;
+main {
+  padding: 2rem;
 }
 
-a:hover{
-  color: #71a6f6;
+section {
+  background: white;
+  margin: 2rem auto;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.549);
+  max-width: 60rem;
 }
 
-.container{
+.header-logo {
+  background: rgba(15, 4, 135, 0.237);
+  position: absolute;
+  left: 2rem; 
+  height: 7.5rem; 
+  box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.368);;
+}
+
+.cards-container {
   display: flex;
   justify-content: center;
+  gap: 2rem; 
+  flex-wrap: wrap; 
+}
+
+.dicas-card {
+  border-radius: 2rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0 5rem 10rem -2rem, rgba(0, 0, 0, 0.3) 0 3rem 6rem -3rem, rgba(10, 37, 64, 0.35) 0 -0.2rem 0.6rem 0 inset;
+  overflow: hidden;
+  width: 25rem;
+  background-color: rgb(4, 23, 109);
+  text-align: center;
+  font-size: 1.6rem;
+  padding: 0.5rem;
+  padding-top: 0.8rem;
+}
+
+.dicas-card .dicas-image {
+  background-size: cover;
+  background-position: center;
+  padding: 1rem;
+  margin: -0.5rem;
+}
+
+.dicas-card img {
+  border-radius: 2rem;
+  width: 20rem;
+  height: 20rem;
+  margin-top: 0.8rem;
+  padding-top: 0.8rem;
+}
+
+.tittle {
+  border-radius: 3rem;
+  box-shadow: 0px 0.4rem 1rem rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  width: 38rem;
+  background-color: #0a4ab9;
+  padding: 2rem;
+  margin-bottom: 1rem;
+  position: relative;
+  top: -1rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.dicas-name {
+  border-radius: 1rem;
+  padding: 1rem;
+  margin: 1rem;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.cards-section {
+  text-align: center;
+  margin-bottom: 1rem; 
+  position: relative;
+}
+
+.cards-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  padding-bottom: 2rem;
+  color: #ffffff;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
   width: 100%;
-  margin-top: 10rem;
-}
-
-.card{
-  background-color: white;
-  padding: 3rem;
-  border-radius: 5%;
-  box-shadow: 0.4rem 0.4rem 0.1rem 0rem #00000060;
-  width: 40rem;
-}
-
-.justify-evenly{
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
   display: flex;
-  justify-content: space-evenly;
+  align-items: center;
+  justify-content: center;
 }
 
-#team-list {
-  margin-bottom: 2rem; 
+.modal-content {
+  background: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  text-align: center;
+  width: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
-#teams {
+.close {
+  position: absolute;
+  right: 1.5rem;
+  top: 1rem;
+  font-size: 5rem;
+  cursor: pointer;
+  color: red;
+  margin: 1rem;
+}
+
+.modal img {
+  width: 100%;
+  max-height: 30rem;
+  object-fit: cover;
+  border-radius: 1rem;
+  margin-top: 1rem;
+}
+
+.menu-icon {
+  font-size: 4rem;
+  padding: 1rem;
+  cursor: pointer;
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+}
+
+.sidebar {
+  height: 100%;
+  width: 25rem;
+  position: fixed;
+  top: 0;
+  right: -25rem;
+  background-color: #092c69;
+  padding-top: 2rem;
+  transition: 0.3s;
+}
+
+.sidebar ul {
   list-style: none;
   padding: 0;
 }
 
-#teams li {
-  background-color: #66C4DC;
-  color: white;
-  margin: 0.5rem 0; 
-  padding: 1rem; 
-  border-radius: 0.8rem; 
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.sidebar ul li {
+  padding: 1rem;
 }
 
-#add-team-btn {
-  background-color: #0C1A26;
+.sidebar ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.6rem;
+  display: block;
+}
+
+.sidebar ul li a:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.close-btn {
+  font-size: 2rem;
+  cursor: pointer;
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  color: white;
+}
+
+.btn-dicas {
+  background-color: #0cbbd2;
   color: white;
   border: none;
-  padding: 1rem 2rem;
-  border-radius: 0.8rem; 
+  padding: 1rem 2rem; 
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.9rem;
   cursor: pointer;
-  font-size: 1.6rem; 
+  border-radius: 0.5rem;
+  transition: background-color 0.3s ease;
+  margin-top: 2rem;
 }
 
-#logout-btn {
-  background-color: #970000;
-  color: white;
-  border: none;
-  padding: 1rem 2rem;
-  border-radius: 0.8rem; 
-  cursor: pointer;
-  font-size: 1.6rem; 
+.btn-dicas:hover {
+  background-color: #062ddf;
 }
 
-#logout-btn:hover {
-  background-color: #f38787;
+.btn-dicas:active {
+  background-color: rgb(15, 4, 135);
 }
-
-#add-team-btn:hover {
-  background-color: #66C4DC;
-}
-
-/* img{
-  height: 10px;
-} */
