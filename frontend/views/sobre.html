@@ -8,50 +8,93 @@
 </head>
 <body>
     <header>
-        <h1>Sobre o Projeto</h1>
-        <p>Conheça as pessoas por trás dessa iniciativa e os objetivos que buscamos alcançar.</p>
+
+        <span class="menu-icon" onclick="toggleMenu()">&#9776;</span>
+        <img src="../assets/image/Logo.png" alt="Logo" class="header-logo">
+        <h1>Guia para Economia de Água em Residências</h1>
+
     </header>
+<main>
 
-    <section class="team">
-        <h2>Nossa Equipe</h2>
-        <div class="team-container">
-            <div class="member">
-                <img src="img/membro1.jpg" alt="Foto do membro 1">
-                <h3>Nome do Membro 1</h3>
-                <p>Função no projeto</p>
-            </div>
-            <div class="member">
-                <img src="img/membro2.jpg" alt="Foto do membro 2">
-                <h3>Nome do Membro 2</h3>
-                <p>Função no projeto</p>
-            </div>
-            <div class="member">
-                <img src="img/membro3.jpg" alt="Foto do membro 3">
-                <h3>Nome do Membro 3</h3>
-                <p>Função no projeto</p>
-            </div>
-        </div>
-    </section>
+  <nav id="sidebar" class="sidebar">
+    <span class="close-btn" onclick="toggleMenu()">&times;</span>
 
-    <section class="goals">
-        <h2>Nossa Missão</h2>
-        <p>Nosso objetivo é reduzir o consumo de água em residências por meio de tecnologias inovadoras e conscientização.</p>
-    </section>
+    <ul>
 
-    <section class="timeline">
-        <h2>Linha do Tempo</h2>
-        <ul>
-            <li><strong>2024:</strong> Início do projeto e primeiros protótipos.</li>
-            <li><strong>2025:</strong> Implementação em casas-piloto e avaliação dos resultados.</li>
-            <li><strong>2026:</strong> Expansão do projeto para mais regiões.</li>
-        </ul>
-    </section>
+        <li><a href="../views/principal.html">Home</a></li>
+        <li><a href="../views/dicas.html">Dicas para Economizar</a></li>
+        <li><a href="../views/pesquisa.html">Pesquisa e Tecnologia</a></li>
+        <li><a href="../views/calculadora.html">Calculadora de Consumo</a></li>
+        <li><a href="../views/resultados.html">Resultados Esperados</a></li>
+        <li><a href="../views/sobre">Sobre Nós</a></li>
+        
+    </ul>
+  </nav>
 
-    <section class="contact">
+  <section class="team cards-section">
+    <h2 class=" tittle">Conheça a equipe</h2>
+
+    <div class="team-container">
+      <div class="member">
+
+        <img src="../assets/image/matheus.jpeg" alt="Foto do Matheus">
+        <h3>Matheus Decol</h3>
+        <p>Gestor do projeto e desenvolvimento front-end</p>
+
+      </div>
+
+      <div class="member">
+
+        <img src="../assets/image/leticia.jpeg" alt="Foto da Leticia">
+        <h3>Leticia Satiko</h3>
+        <p>Desenvolvimento front-end e back-end</p>
+
+      </div>
+
+      <div class="member">
+
+        <img src="../assets/image/" alt="Foto do Lucas">
+        <h3>Lucas Laudenir</h3>
+        <p>Desenvolvimento back-end e banco de dados</p>
+
+      </div>
+
+    </div>
+  </section>
+  
+  <section class="goals">
+
+    <h2>Nossa Missão</h2>
+    <p>Nosso objetivo é reduzir o consumo de água em residências por meio de tecnologias inovadoras e conscientização.</p>
+
+  </section>
+  
+  <section class="contact">
+
+    <h2>Entre em Contato</h2>
+    <button id="contactBtn">Fale Conosco</button>
+
+  </section>
+  
+  <div id="popup" class="popup-container">
+    <div class="popup-content">
+
+        <span id="closePopup" class="close-btn">&times;</span>
         <h2>Entre em Contato</h2>
-        <button id="contactBtn">Fale Conosco</button>
-    </section>
+        <p>Para mais informações sobre o projeto, entre em contato pelo nosso linkedin:</p>
+        <p><strong>
+          <a href="https://www.linkedin.com/in/matheus-decol-da-silva-dantas-822799266/" target="_blank"> Matheus Decol</a><br>
+          <a href="https://www.linkedin.com/in/leticiasatiko/" target="_blank">Leticia Satiko</a><br>
+          <a href="https://www.linkedin.com/in/lucas-filipim-6976b1271/" target="_blank">Lucas Filipim</a>
+        </strong></p>
 
-    <script src="../scripts/sobre.js"></script>
+    </div>
+  </div>
+
+
+  </main>
+
+  <script src="../scripts/sobre.js"></script>
+
 </body>
 </html>
