@@ -63,7 +63,7 @@ section {
 
 .tittle {
   border-radius: 3rem;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0.4rem 1rem rgba(0, 0, 0, 0.2);
   overflow: hidden;
   width: 38rem;
   background-color: #0a4ab9;

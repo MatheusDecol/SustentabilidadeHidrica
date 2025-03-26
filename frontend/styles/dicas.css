@@ -84,7 +84,7 @@ section {
 
 .tittle {
   border-radius: 3rem;
-  box-shadow: 0px 0.4rem 1rem rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0.4rem 1rem rgba(0, 0, 0, 0.2);
   overflow: hidden;
   width: 38rem;
   background-color: #0a4ab9;
@@ -140,7 +140,7 @@ section {
   border-radius: 1rem;
   text-align: center;
   width: 50%;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
 }
 
 .close {
@@ -155,7 +155,7 @@ section {
 
 .modal img {
   width: 100%;
-  max-height: 300px;
+  max-height: 30rem;
   object-fit: cover;
   border-radius: 1rem;
   margin-top: 1rem;
