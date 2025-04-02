@@ -84,6 +84,7 @@ button:hover {
   text-align: center;
   margin-bottom: 1rem; 
   position: relative;
+  align-items: center;
 }
 
 .cards-section h2 {
@@ -95,8 +96,8 @@ button:hover {
 
 .team, .goals, .contact {
   font-size: 1.6rem;
-  margin: 4rem 2rem;
-  padding: 2rem;
+  margin: 4rem 6.5rem;
+  padding: 4rem;
   background: white;
   border-radius: 1rem;
   box-shadow: 0 0.4rem 0.6rem rgba(0, 0, 0, 0.1);
@@ -122,7 +123,6 @@ button:hover {
   width: 100%;
   border-radius: 50%;
 }
-
 
 .modal {
   display: none;
