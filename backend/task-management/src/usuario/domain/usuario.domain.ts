@@ -1,22 +1,22 @@
 export class Usuario{
-    private _idU: number;
+    private _id: number;
     private _nome: string;
     private _email: string;
     private _senha: string;
-    private _ativo?: boolean;
+   
 
     constructor(
-        idU: number,
+        id: number,
         nome: string,
         email: string,
         senha: string,
-        ativo?: boolean,
+       
     ) {
-        this._idU = idU;
+        this._id = id;
         this._nome = nome;
         this._email = email;
         this._senha = senha;
-        this._ativo = ativo;
+       
     }
 
     //Métodos
@@ -34,8 +34,8 @@ export class Usuario{
 
 
     //GETTERs
-    get getId(): number {
-        return this._idU;
+    get getid(): number {
+        return this._id;
     }
 
     get getNome(): string {
@@ -48,10 +48,6 @@ export class Usuario{
 
     get getSenha(): string {
         return this._senha;
-    }
-
-    get isAtivo(): boolean {
-        return this._ativo;
     }
 
     //SETTERs
@@ -67,7 +63,4 @@ export class Usuario{
         this._senha = senha;
     }
 
-    set setAtivo(ativo: boolean) {
-        this._ativo = ativo;
-    }
 }

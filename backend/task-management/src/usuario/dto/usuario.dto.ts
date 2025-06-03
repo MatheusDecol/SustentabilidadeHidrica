@@ -1,10 +1,9 @@
-import { IsBoolean, IsEmail, IsNotEmpty, IsNumber, IsOptional, IsString } from "class-validator";
+import { IsEmail, IsNotEmpty, IsNumber, IsOptional, IsString } from "class-validator";
 
-export class UsuarioDto{
-    
+export class UsuarioDto {
     @IsNumber()
     @IsOptional()
-    idU: number;
+    id: number;
 
     @IsString()
     @IsNotEmpty()
@@ -18,21 +17,15 @@ export class UsuarioDto{
     @IsNotEmpty()
     senha: string;
 
-    @IsBoolean()
-    @IsOptional()
-    ativo?: boolean;
-
     constructor(
-        idU: number,
+        id: number,
         nome: string,
         email: string,
-        senha: string,
-        ativo: boolean = false,
+        senha: string
     ) {
-        this.idU = idU;
+        this.id = id;
         this.nome = nome;
         this.email = email;
         this.senha = senha;
-        this.ativo = ativo;
     }
 }
