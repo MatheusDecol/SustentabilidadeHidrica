@@ -28,6 +28,7 @@ formCadastro.addEventListener("submit", async (e) => {
   }
 });
 
+const senha = document.getElementById("senha");
 const btn = document.getElementById("verSenha");
 
 btn.addEventListener("click", () => {
