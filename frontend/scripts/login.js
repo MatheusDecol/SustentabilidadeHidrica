@@ -1,4 +1,3 @@
-
 const formLogin = document.getElementById("formLogin");
 
 
@@ -8,22 +7,20 @@ formLogin.addEventListener("submit", async (e) => {
     const email = document.getElementById("email").value.trim();
     const senha = document.getElementById("senha").value.trim();
 
-    const body = {
-        email: email,
-        senha: senha
-    }
-    
-    try{
-        const response = await axios.post("http://localhost:3001/usuario/login", body)
+    try {
+        const response = await axios.post("http://localhost:8080/auth/login", {
+            emailUsuario: email,
+            password: senha
+        });
 
-        const token = response.data.data;
+        const token = response.data.token;
         localStorage.setItem("token", token);
-        
+
         console.log(response);
-        window.location.href = "/frontend/views/principal.html";
-    }catch(error){
+        window.location.href = "principal.html";
+    } catch (error) {
         console.error("Erro ao entrar", error);
-        alert(`Erro ao entrar: ${error.response.data.message}`)
+        alert(`Erro ao entrar: ${error?.response?.data?.message || 'Erro desconhecido'}`);
     }
 })
 

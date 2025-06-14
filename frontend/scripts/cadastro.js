@@ -7,24 +7,18 @@ formCadastro.addEventListener("submit", async (e) => {
   const email = document.getElementById("email").value.trim();
   const senha = document.getElementById("senha").value.trim();
 
-  const body = {
-    nome: nome,
-    email: email,
-    senha: senha,
-  };
-
   try {
     const response = await axios.post("http://localhost:8080/auth/register", {
       login: email,
       password: senha,
-      role: "USER", // ou "FEIRANTE", "ADMIN", etc., conforme o enum do seu backend
+      role: "USER", // ajuste conforme necessário
     });
 
     console.log(response);
-    window.location.href = "/frontend/views/login.html";
+    window.location.href = "login.html";
   } catch (error) {
     console.log(error);
-    alert(`Erro ao cadastrar usuário: ${error.response.data.message}`);
+    alert(`Erro ao cadastrar usuário: ${error?.response?.data?.message || 'Erro desconhecido'}`);
   }
 });
 
